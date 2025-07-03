@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerenciamento de Filmes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="form-filme">
+      <!-- Formulário de Cadastro -->
+      <h3>Cadastrar Filme</h3>
+      <input type="text" id="titulo" placeholder="Título" required>
+      <input type="text" id="diretor" placeholder="Diretor" required>
+      <input type="number" id="ano" placeholder="Ano de Lançamento" required>
+      <input type="text" id="genero" placeholder="Gênero" required>
+      <input type="text" id="nota" placeholder="Nota" required>
+      <input type="url" id="imagem" placeholder="Colar Imagem de Cartaz (URL)" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+    
+    <!-- Filtros -->
+    <div class="filtros">
+  <select id="filtro-genero">
+  <option value="">Filtrar por Gênero</option>
+  <option value="Ação">Ação</option>
+  <option value="Aventura">Aventura</option>
+  <option value="Animação">Animação</option>
+  <option value="Comédia">Comédia</option>
+  <option value="Comédia Romântica">Comédia Romântica</option>
+  <option value="Crime">Crime</option>
+  <option value="Documentário">Documentário</option>
+  <option value="Drama">Drama</option>
+  <option value="Família">Família</option>
+  <option value="Fantasia">Fantasia</option>
+  <option value="Ficção Científica">Ficção Científica</option>
+  <option value="Guerra">Guerra</option>
+  <option value="Histórico">Histórico</option>
+  <option value="Mistério">Mistério</option>
+  <option value="Musical">Musical</option>
+  <option value="Romance">Romance</option>
+  <option value="Suspense">Suspense</option>
+  <option value="Terror">Terror</option>
+  <option value="Western">Western</option>
+</select>
+
+  <select id="filtro-nota">
+    <option value="">Filtrar por Nota mínima</option>
+    <option value="1">1+</option>
+    <option value="2">2+</option>
+    <option value="3">3+</option>
+    <option value="4">4+</option>
+    <option value="5">5+</option>
+    <option value="6">6+</option>
+    <option value="7">7+</option>
+    <option value="8">8+</option>
+    <option value="9">9+</option>
+  </select>
+</div>
+
+    <!-- Espaço de Exposição dos Filmes Cadastrados -->
+    <h2>Gerenciamento de Filmes</h2>
+    <div id="galeria" class="galeria"></div>
+  </div>
+<footer>
+        <p>&copy; Developed F. Daniel Nasc. Todos os direitos reservados.</p>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>
